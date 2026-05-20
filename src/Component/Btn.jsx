@@ -8,8 +8,8 @@ const handleClick = () => {
 }
 
   return(
-    <div className="flex justify-around text-white mb-5 flex-col md:flex-row  gap-4">
-      <button onClick={handleClick} className="text-2xl font-bold bg-sky-500 hover:bg-blue-600 rounded-2xl py-2 p-4">See for more</button>
+    <div className="flex justify-around text-white mb-5 flex-col md:flex-row py-4">
+      <button onClick={handleClick} className="text-2xl font-bold border-black sha bg-green-500 hover:bg-green-600 rounded-2xl px-10 py-2">See for more</button>
 
       {showCards && <Cardslist/>}
     </div>
