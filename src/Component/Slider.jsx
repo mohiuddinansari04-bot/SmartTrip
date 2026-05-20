@@ -1,5 +1,12 @@
 import React from 'react'
+import { useState } from 'react';
+import Cardslist from './Cardslist.jsx';
+
 function Slider() {
+  const [showCards, setShowCards] = useState(false);
+  const handleClick = () => {
+    setShowCards(true);
+  }
   return (
     <div className='relative h-screen w-full'>
       {/* image*/}
@@ -12,7 +19,8 @@ function Slider() {
           <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold'>Welcome to SmartTrip!!</h1>
           {/* paragraph*/}
           <p>Discover amazing places with SmartTrip! ! ! !</p>
-          <h2 className=' mt-2 hover:shadow-2xl text-3xl'>Start your jurney</h2>
+          <button onClick={handleClick} className=' mt-4 hover:shadow-2xl text-3xl bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded'>Start your jurney</button>
+          {showCards && <Cardslist />}
         </div>
       </div>
 
