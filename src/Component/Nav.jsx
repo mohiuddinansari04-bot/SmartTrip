@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Navigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FaRocket } from "react-icons/fa";
 import { AiOutlineLogin } from "react-icons/ai";
 
@@ -27,7 +27,7 @@ function Nav() {
             </li>
 
             <li className="hover:underline p-2 rounded cursor-pointer text-white">
-              <a to="/about">About</a >
+              <a to="/about">About</a>
             </li>
 
             <li className="hover:underline p-2 rounded cursor-pointer text-white">
@@ -37,6 +37,7 @@ function Nav() {
           </ul>
 
           {/* Login Button */}
+          
           <button className="flex items-center gap-2 text-white text-lg sm:text-xl px-4 py-2 rounded hover:bg-sky-500 ">
 
             <AiOutlineLogin />

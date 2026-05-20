@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import Cardslist from "./Cardslist";
+import Cardslist from "./Cardslist.jsx";
 function Btn( ){
 const [showCards, setShowCards] = useState(false);
 const handleClick = () => {

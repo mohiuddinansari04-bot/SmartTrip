@@ -12,7 +12,7 @@ function Slider() {
           <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold'>Welcome to SmartTrip!!</h1>
           {/* paragraph*/}
           <p>Discover amazing places with SmartTrip! ! ! !</p>
-          <button className='bg-sky-600 mt-2 hover:shadow-2xl hover:bg-sky-700 transform p-2 rounded'>Start your jurney</button>
+          <h2 className=' mt-2 hover:shadow-2xl text-3xl'>Start your jurney</h2>
         </div>
       </div>
 
