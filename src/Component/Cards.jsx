@@ -18,11 +18,34 @@ function Cards() {
       title: "go to city",
       Image: "https://images.unsplash.com/photo-1494526585095-c41746248156",
       dose: "Discover amazing city life and modern architecture.",
-    }
+    },
+
+     {
+      id: 4,
+      title: "go to beach",
+      Image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+      dose: "Enjoy beautiful beaches and amazing sunsets in Goa.",
+    },
+    {
+      id: 2,
+      title: "go to mountain",
+      Image: "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
+      dose: "Explore beautiful mountains and nature views.",
+    },
+    {
+      id: 3,
+      title: "go to city",
+      Image: "https://images.unsplash.com/photo-1494526585095-c41746248156",
+      dose: "Discover amazing city life and modern architecture.",
+    },
+    
+   
+    // space-y-2 flex flex-col lg:flex-row px-4 py-3 justify-around mt-5 mb-5
+    
   ]
 
   return (
-    <div className=" space-y-2 flex flex-col md:flex-row px-4 py-3 justify-around mt-5 mb-5 ">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-5 px-4 mt-5 mb-5">
       {cardData.map((card) => (
         <div className="max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white hover:scale-105 transition-transform duration-300">
           {/* Card Image */}
