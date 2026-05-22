@@ -10,8 +10,12 @@ import Btn from './Component/Btn.jsx'
 import { BrowserRouter } from "react-router-dom";
 
 createRoot(document.getElementById('root')).render(
+
+
   <StrictMode>
-     <App />
+    
+      <App />
+  
     <Nav />
     <Slider />
     <Siderbar />
@@ -19,4 +23,7 @@ createRoot(document.getElementById('root')).render(
     <Btn />
     <Footer />
   </StrictMode>
+
+
+
 )

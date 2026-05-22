@@ -3,7 +3,12 @@ import Cards from "./Cards";
 function Cardslist (){
   
   return(
-    <div className=" flex flex-col ">
+    <div className="">
+      <Cards/>
+      <Cards/>
+      <Cards/>
+      <Cards/>
+      <Cards/>
       <Cards/>
       <Cards/>
       <Cards/>

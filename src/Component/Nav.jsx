@@ -21,24 +21,24 @@ function Nav() {
 
           {/* Nav Links */}
           <ul className="flex flex-col sm:flex-row justify-center items-center gap-4 text-lg font-medium">
-      
+
 
             <li className="hover:underline p-2 rounded cursor-pointer text-white">
-              <a to="/">Home</a>
+              <a  href="/">Home</a>
             </li>
 
             <li className="hover:underline p-2 rounded cursor-pointer text-white">
-              <a to="/about">About</a>
+              <a href="/about">About</a >
             </li>
 
             <li className="hover:underline p-2 rounded cursor-pointer text-white">
-              <a to="/contact">Contact</a>
+              <a href="/contact">Contact</a>
             </li>
 
           </ul>
 
           {/* Login Button */}
-          
+
           <button className="flex items-center gap-2 text-white text-lg sm:text-xl px-4 py-2 rounded hover:bg-sky-500 ">
 
             <AiOutlineLogin />
@@ -49,7 +49,7 @@ function Nav() {
         </nav>
 
       </div>
-     
+
     </>
   )
 }
