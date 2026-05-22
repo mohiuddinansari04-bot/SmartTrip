@@ -14,13 +14,14 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <App />
+      <Slider />
+      <Siderbar />
+      <Cards />
+      <Btn />
+      <Footer />
     </BrowserRouter>
 
-    <Slider />
-    <Siderbar />
-    <Cards />
-    <Btn />
-    <Footer />
+
   </StrictMode>
 
 
