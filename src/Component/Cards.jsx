@@ -46,9 +46,9 @@ function Cards() {
   ]
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-5 px-4 mt-5 mb-5">
+    <div  className="grid grid-cols-1 md:grid-cols-3 gap-8 py-5 px-4 mt-5 mb-5">
       {cardData.map((card) => (
-        <div className="max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white hover:scale-105 transition-transform duration-300">
+        <div key={card.id} className="max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white hover:scale-105 transition-transform duration-300">
           {/* Card Image */}
           <img src={card.Image} alt={card.title}
             className="w-full h-56 object-cover hover:scale-105 transition-transform duration-400" />

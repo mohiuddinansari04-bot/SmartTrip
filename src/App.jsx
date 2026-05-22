@@ -17,7 +17,7 @@ import Contact from './Hero/Contact';
 
 
 function App() {
-  c
+  
 
 
   return (
