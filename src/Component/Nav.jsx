@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaRocket } from "react-icons/fa";
 import { AiOutlineLogin } from "react-icons/ai";
+import { Link } from 'react-router-dom';
 
 
 function Nav() {
@@ -23,15 +24,15 @@ function Nav() {
 
 
             <li className="hover:underline p-2 rounded cursor-pointer text-white">
-              <a  href="/">Home</a>
+              <Link to="/">Home</Link>
             </li>
 
             <li className="hover:underline p-2 rounded cursor-pointer text-white">
-              <a href="/about">About</a >
+              <Link to="/about">About</Link>
             </li>
 
             <li className="hover:underline p-2 rounded cursor-pointer text-white">
-              <a href="/contact">Contact</a>
+              <Link to ="/contact">Contact</Link>
             </li>
 
           </ul>

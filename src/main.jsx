@@ -16,9 +16,7 @@ createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <App />
     </BrowserRouter>
-    
-  
-    <Nav />
+    {/* <Nav /> */}
     <Slider />
     <Siderbar />
     <Cards />
