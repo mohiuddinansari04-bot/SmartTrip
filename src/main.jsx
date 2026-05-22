@@ -13,15 +13,8 @@ createRoot(document.getElementById('root')).render(
 
   <StrictMode>
     <BrowserRouter>
-      <App />
-      <Slider />
-      <Siderbar />
-      <Cards />
-      <Btn />
-      <Footer />
+      <App />  
     </BrowserRouter>
-
-
   </StrictMode>
 
 
