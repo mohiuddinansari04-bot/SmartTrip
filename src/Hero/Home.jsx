@@ -1,5 +1,7 @@
 import React from "react";
-const Home = () =>{
+import { Navigate } from "react-router-dom";
+const Home = (nav) =>{
+   const nav =Navigate();
   return(
     <div>
       <h1>Welcome to the Home Page</h1>
