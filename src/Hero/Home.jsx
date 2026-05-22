@@ -1,13 +1,36 @@
+// import React from "react";
+// import { Navigate } from "react-router-dom";
+// const Home = () =>{
+//    const nav =Navigate();
+//   return(
+//     <div>
+//       <h1>Welcome to the Home Page</h1>
+//       <p>This is a simple home page component.</p>
+
+//         <button onClick={() => nav("/about")}>
+//         Go Home
+//       </button>
+
+//     </div>
+//   )
+// }
+
+// export default Home;
 import React from "react";
-import { Navigate } from "react-router-dom";
-const Home = (nav) =>{
-   const nav =Navigate();
-  return(
+import { useNavigate } from "react-router-dom";
+
+const Home = () => {
+
+  const nav = useNavigate();
+
+  return (
     <div>
       <h1>Welcome to the Home Page</h1>
       <p>This is a simple home page component.</p>
+
+      
     </div>
-  )
-}
+  );
+};
 
 export default Home;
