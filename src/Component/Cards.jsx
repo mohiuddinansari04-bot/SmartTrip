@@ -37,26 +37,8 @@ function Cards() {
       title: "Visit Switzerland",
       Image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800",
       dose: "See snowy mountains and peaceful lakes.",
-    },
-    {
-      id: 4,
-      title: "explor the world",
-      Image: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800",
-      dose: "Experience the beauty of Paris and the Eiffel Tower.",
-    },
-    {
-      id: 5,
-      title: "Explore Dubai",
-      Image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800",
-      dose: "Enjoy luxury lifestyle and amazing skyscrapers.",
-    },
-    {
-      id: 6,
-      title: "Visit Switzerland",
-      Image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800",
-      dose: "See snowy mountains and peaceful lakes.",
     }
-
+    
 
     // space-y-2 flex flex-col lg:flex-row px-4 py-3 justify-around mt-5 mb-5
     
