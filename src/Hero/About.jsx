@@ -25,8 +25,8 @@ const About = () => {
 
       {/*container */}
       <div className=" max-w-3xl border-2 mt-5 mb-5">
-        <h1></h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis hic harum fugiat itaque dolor error expedita rerum asperiores numquam. Officiis asperiores quo magnam! Ex pariatur hic perspiciatis, veritatis expedita neque!</p>
+        <h1>!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</h1>
+        <p className="font-semibold ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis hic harum fugiat itaque dolor error expedita rerum asperiores numquam. Officiis asperiores quo magnam! Ex pariatur hic perspiciatis, veritatis expedita neque!</p>
 
       </div>
     </div>
