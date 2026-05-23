@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaRocket } from "react-icons/fa";
 import { AiOutlineLogin } from "react-icons/ai";
-import { Link,useNavigate } from 'react-router-dom';
+import { Link,Outlet,useNavigate } from 'react-router-dom';
 
 
 function Nav() {
@@ -45,6 +45,7 @@ function Nav() {
 
             Login
           </button>
+          <Outlet/>
         
         </nav>
 
