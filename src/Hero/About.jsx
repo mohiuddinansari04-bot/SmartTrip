@@ -20,8 +20,10 @@ const About = () => {
 
   return (
     <div>
-      <h1>About Page</h1>
-      <p>know more about us</p>
+      <h1 className="font-bold text-3xl flex justify-around text-">About us </h1>
+      <div>
+        
+      </div>
     </div>
   );
 };
