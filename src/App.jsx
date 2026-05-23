@@ -18,15 +18,13 @@ import Contact from './Hero/Contact';
 
 function App() {
   
-
-
   return (
     <>
       <Nav />
 
       <Routes>
 
-        <Route index element={<Home />} />
+        <Route path='/' element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
@@ -36,9 +34,6 @@ function App() {
       <Cards />
       <Btn />
       <Footer />
-
-
-
     </>
   )
 }

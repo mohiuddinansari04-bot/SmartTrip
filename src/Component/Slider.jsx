@@ -19,7 +19,7 @@ function Slider() {
           <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold'>Welcome to SmartTrip!!</h1>
           {/* paragraph*/}
           <p>Discover amazing places with SmartTrip! ! ! !</p>
-          <button onClick={handleClick} className='hover:shadow-[0_0_25px_rgba(14,165,233,0.8)] mt-4 hover:scale-105 transform:transition-all duration-300 scroll-smooth text-3xl bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded'>Start your jurney</button>
+          <button onClick={handleClick} className='hover:shadow-[0_0_25px_rgba(14,165,233,0.8)] mt-4 hover:scale-105 transform:transition-all duration-300 scroll-smooth text-3xl bg-green-500 hover:bg-green-600 text-white py-3 px-5 rounded'>Start your jurney</button>
           {showCards && <Cardslist />}
         </div>
       </div>

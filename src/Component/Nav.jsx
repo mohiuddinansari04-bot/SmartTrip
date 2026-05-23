@@ -1,7 +1,8 @@
 import React from 'react'
 import { FaRocket } from "react-icons/fa";
 import { AiOutlineLogin } from "react-icons/ai";
-import { Link,Outlet} from 'react-router-dom';
+import { Link} from 'react-router-dom';
+
 
 
 function Nav() {
@@ -48,9 +49,6 @@ function Nav() {
          
         
         </nav>
-
-         <Outlet/>
-
       </div>
 
     </>
