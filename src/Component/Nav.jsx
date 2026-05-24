@@ -3,7 +3,6 @@ import { FaRocket } from "react-icons/fa";
 import { AiOutlineLogin } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { CiMenuBurger } from "react-icons/ci";
-djfbefj
 
 function Nav() {
   return (
