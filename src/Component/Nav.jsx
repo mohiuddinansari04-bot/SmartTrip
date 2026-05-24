@@ -41,7 +41,10 @@ function Nav() {
             Login
           </button> */}
           <div className="">
-          <IoMenu />
+            <button> 
+              <IoMenu />
+              </button>
+         
         </div>
         </nav>
         
