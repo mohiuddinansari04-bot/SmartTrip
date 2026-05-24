@@ -1,12 +1,13 @@
 import React from "react";
 import { FaRocket } from "react-icons/fa";
-// import { AiOutlineLogin } from "react-icons/ai";
+import { IoMenu } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { CiMenuBurger } from "react-icons/ci";
 
 function Nav() {
   return (
     <>
+    <div className="w-full">
       <div className="w-full">
         <nav className="bg-sky-700 px-4 py-3 flex flex-row md:flex-row items-center justify-between gap-4">
           {/* Logo */}
@@ -39,7 +40,12 @@ function Nav() {
             <AiOutlineLogin />
             Login
           </button> */}
+          <div className="">
+          <IoMenu />
+        </div>
         </nav>
+        
+      </div>
       </div>
     </>
   );
