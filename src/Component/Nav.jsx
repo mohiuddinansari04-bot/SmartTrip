@@ -1,15 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaRocket } from "react-icons/fa";
 import { IoMenu } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { CiMenuBurger } from "react-icons/ci";
 
 function Nav() {
+  const [showmenu,setshowmenu] =useState();
   return (
     <>
     <div className="w-full">
       <div className="w-full">
-        <nav className="bg-sky-700 px-4 py-3 flex flex-row md:flex-row items-center justify-between gap-4">
+        <nav className="bg-sky-700 px-4 py-3 flex flex-row md:flex-row items-center justify-between gap-4" >
           {/* Logo */}
           <h1 className="flex items-center text-2xl sm:text-3xl font-bold text-white bg-sky-600 rounded shadow px-4 py-2">
             <FaRocket className="text-2xl sm:text-3xl text-white mr-2" />
