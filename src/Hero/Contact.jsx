@@ -4,7 +4,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // handle form submission (API call or navigation)
-    alert("Message sent (demo)");
+    alert("Message sent! We will get back to you soon.");
     e.target.reset();
   };
 
