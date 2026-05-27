@@ -8,7 +8,9 @@ function Layout(){
 
   
   <>
-  <Nav/>
+  <main className="">
+  <Nav />
+  </main>
   <Outlet/>
   <Footer/>
   </>
