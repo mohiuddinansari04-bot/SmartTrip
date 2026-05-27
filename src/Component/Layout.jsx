@@ -12,7 +12,9 @@ function Layout(){
   <main className="">
   <Nav />
   </main>
+  <div className="flex-grow">
   <Outlet/>
+  </div>
   <Footer/>
   </div>
   </>
