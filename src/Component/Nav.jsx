@@ -7,8 +7,8 @@ function Nav() {
   const [showmenu,setshowmenu] =useState();
   return (
     <>
-    <div className="w-full">
-      <div className="">
+    <div className="w-full bg-sky-700">
+      
         <nav className="bg-sky-700 px-4 py-3 flex flex-row md:flex-row items-center justify-between gap-4" >
           {/* Logo */}
           <h1 className="flex items-center text-2xl sm:text-3xl font-bold text-white bg-sky-600 rounded shadow px-4 py-2">
@@ -46,7 +46,7 @@ function Nav() {
         </nav>
         
       </div>
-      </div>
+
     </>
   );
 }

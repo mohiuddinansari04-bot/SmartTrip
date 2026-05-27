@@ -8,11 +8,13 @@ function Layout(){
 
   
   <>
+  <div className="flex flex-col min-h-screen">
   <main className="">
   <Nav />
   </main>
   <Outlet/>
   <Footer/>
+  </div>
   </>
   )
 }
