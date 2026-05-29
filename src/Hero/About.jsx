@@ -3,6 +3,28 @@ import { useNavigate } from "react-router-dom";
 
 const About = () => {
   const nav = useNavigate();
+
+  const featureCards = [
+    {
+      id: 1,
+      title: "24/7 Travel Support",
+      info: "Our team is ready to help you anytime, anywhere, so your trip stays smooth from booking to return.",
+      icon: "🌍",
+    },
+    {
+      id: 2,
+      title: "Best Price Guarantee",
+      info: "We compare top vendors and secure the best travel deals so you can travel more for less.",
+      icon: "💎",
+    },
+    {
+      id: 3,
+      title: "Custom Itineraries",
+      info: "Every plan is tailored to your style, whether you want relaxation, adventure, culture, or luxury.",
+      icon: "✈️",
+    },
+  ];
+
  const aboutData = [
   {
     id: 1,
@@ -31,6 +53,20 @@ const About = () => {
     desc: "Discover famous cities, shopping streets, nightlife, and cultural attractions.",
     image:
       "https://images.unsplash.com/photo-1494526585095-c41746248156",
+  },
+  {
+    id: 5,
+    title: "Wildlife Safaris",
+    desc: "Get closer to nature with guided safaris, wildlife tours, and unforgettable animal encounters.",
+    image:
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+  },
+  {
+    id: 6,
+    title: "Cruise Journeys",
+    desc: "Sail along coastlines with luxury cruises, scenic routes, and full-service travel packages.",
+    image:
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
   },
 ];
 
