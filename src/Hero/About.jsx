@@ -75,15 +75,29 @@ const About = () => {
   <div className="max-w-7xl mx-auto">
 
     {/* Heading */}
-    <div className="text-center mb-16">
+    <div className="text-center mb-12">
       <h1 className="text-5xl font-bold text-sky-700 mb-4">
         About SmartTrip
       </h1>
 
-      <p className="text-gray-600 max-w-3xl mx-auto text-lg">
+      <p className="text-gray-600 max-w-3xl mx-auto text-lg leading-8">
         Explore the world with SmartTrip and create unforgettable memories
         with comfort, adventure, and luxury travel experiences.
       </p>
+    </div>
+
+    {/* Feature Cards */}
+    <div className="grid gap-6 md:grid-cols-3 mb-16">
+      {featureCards.map((card) => (
+        <div
+          key={card.id}
+          className="group bg-white rounded-3xl p-8 text-center shadow-md hover:-translate-y-2 hover:shadow-xl transition duration-300 ease-out"
+        >
+          <div className="text-5xl mb-4">{card.icon}</div>
+          <h3 className="text-2xl font-bold text-sky-700 mb-3">{card.title}</h3>
+          <p className="text-gray-600 leading-7">{card.info}</p>
+        </div>
+      ))}
     </div>
 
     {/* About Sections */}
@@ -94,7 +108,7 @@ const About = () => {
           key={item.id}
           className={`flex flex-col md:flex-row ${
             index % 2 !== 0 ? "md:flex-row-reverse" : ""
-          } items-center gap-10 bg-white rounded-3xl shadow-lg p-6 hover:scale-105 transition duration-300`}
+          } items-center gap-10 bg-white rounded-3xl shadow-lg p-6 hover:shadow-2xl transition duration-300`}
         >
 
           {/* Left Content */}
@@ -107,17 +121,20 @@ const About = () => {
               {item.desc}
             </p>
 
-            <button className="bg-sky-700 hover:bg-sky-800 text-white px-6 py-3 rounded-xl transition duration-300">
+            <button
+              onClick={() => nav("/contact")}
+              className="bg-sky-700 hover:bg-sky-800 text-white px-6 py-3 rounded-xl transition duration-300"
+            >
               Explore More
             </button>
           </div>
 
           {/* Right Image */}
-          <div className="flex-1">
+          <div className="flex-1 overflow-hidden rounded-3xl">
             <img
               src={item.image}
               alt={item.title}
-              className="w-full h-350px object-cover rounded-3xl"
+              className="w-full h-350px object-cover rounded-3xl transform transition duration-500 hover:scale-105"
             />
           </div>
 
