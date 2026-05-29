@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { CiMenuBurger } from "react-icons/ci";
 
 function Nav() {
-  const [showmenu,setshowmenu] =useState();
+  const [showmenu, setshowmenu] = useState(false);
   return (
     <>
     <div className="w-full bg-sky-700">
@@ -34,16 +34,36 @@ function Nav() {
             </li>
           </ul>
 
-          {/* Login Button */}
-
-          {/* <button className="flex items-center gap-2 text-white text-lg sm:text-xl px-4 py-2 rounded hover:bg-sky-500 ">
-            <AiOutlineLogin />
-            Login
-          </button> */}
+          {/* Hamburger Button */}
+          <button 
+            onClick={() => setshowmenu(!showmenu)}
+            className="lg:hidden text-white text-3xl flex flex-col gap-1.5"
+            aria-label="Toggle menu"
+          >
+            <CiMenuBurger />
+          </button>
        
          
       
         </nav>
+
+        {/* Mobile Menu */}
+        {showmenu && (
+          <ul className="lg:hidden flex flex-col bg-sky-600 px-4 py-3 gap-4">
+            <li className="hover:underline p-2 rounded cursor-pointer text-white text-lg">
+              <Link to="/" onClick={() => setshowmenu(false)}>Home</Link>
+            </li>
+            <li className="hover:underline p-2 rounded cursor-pointer text-white text-lg">
+              <Link to="/about" onClick={() => setshowmenu(false)}>About</Link>
+            </li>
+            <li className="hover:underline p-2 rounded cursor-pointer text-white text-lg">
+              <Link to="/contact" onClick={() => setshowmenu(false)}>Contact</Link>
+            </li>
+            <li className="hover:underline p-2 rounded cursor-pointer text-white text-lg">
+              <Link to="/cards" onClick={() => setshowmenu(false)}>Cards</Link>
+            </li>
+          </ul>
+        )}
         
       </div>
 
