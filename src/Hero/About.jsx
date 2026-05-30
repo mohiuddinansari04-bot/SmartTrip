@@ -1,8 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const About = () => {
   const nav = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleLoginSubmit = (event) => {
+    event.preventDefault();
+
+    if (email.trim() && password.trim()) {
+      alert("You login successfully");
+      setEmail("");
+      setPassword("");
+      return;
+    }
+
+    alert("Fill the form first");
+  };
 
   const featureCards = [
     {
@@ -98,6 +113,49 @@ const About = () => {
           <p className="text-gray-600 leading-7">{card.info}</p>
         </div>
       ))}
+    </div>
+
+    {/* Login Form */}
+    <div className="bg-white rounded-3xl shadow-lg p-10 mb-16">
+      <div className="max-w-3xl mx-auto">
+        <h2 className="text-3xl font-bold text-sky-700 mb-6">Login</h2>
+        <form onSubmit={handleLoginSubmit} className="space-y-6">
+          <div>
+            <label htmlFor="email" className="block text-gray-700 mb-2">
+              Email
+            </label>
+            <input
+              id="email"
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:border-sky-500 focus:outline-none"
+              placeholder="Enter your email"
+            />
+          </div>
+
+          <div>
+            <label htmlFor="password" className="block text-gray-700 mb-2">
+              Password
+            </label>
+            <input
+              id="password"
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:border-sky-500 focus:outline-none"
+              placeholder="Enter your password"
+            />
+          </div>
+
+          <button
+            type="submit"
+            className="bg-sky-700 hover:bg-sky-800 text-white px-6 py-3 rounded-xl transition duration-300"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
     </div>
 
     {/* About Sections */}
