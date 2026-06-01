@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Cardslist from './Cardslist.jsx';
 
 function Slider() {
-  
+  // show the home page and hide the cards page
   return (
     <div className='relative h-screen w-full'>
       {/* image*/}
